@@ -10,7 +10,7 @@ module "application" {
     deployment_path = "charts/application"
     values_yaml = <<EOF
 
-replicaCount: 1
+replicaCount: "${var.replicaCount}"
 
 image:
   repository: "${var.repository}"
