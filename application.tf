@@ -18,6 +18,8 @@ image:
 imagePullSecrets: 
   - name: artifact-registry
 
+imagePullPolicy: Always        
+        
 service:
   type: ClusterIP
   port: "${var.app_port}"
