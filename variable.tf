@@ -25,3 +25,7 @@ variable "registry_username" {
 variable "project_id" {}
 
 variable "environment" {}
+
+variable replicaCount {
+  default = ""
+}
